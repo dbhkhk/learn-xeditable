@@ -1,0 +1,17 @@
+<!doctype html>
+<html ng-app="app">
+<head>
+  <title>learn xeditable</title>
+  <meta charset="utf-8">
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.min.js"></script>
+  <link href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
+  <link href="xeditable.css" rel="stylesheet">
+  <script src="xeditable.js"></script>
+  <script src="app.js"></script>
+</head>
+<body>
+  <div ng-controller="Ctrl">
+    <a href="#" editable-text="user.name">{{ user.name || "empty" }}</a>
+  </div>
+</body>
+</html>
