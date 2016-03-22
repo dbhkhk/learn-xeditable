@@ -11,7 +11,8 @@
 </head>
 <body>
   <div ng-controller="Ctrl">
-    <a href="#" editable-text="user.name">{{ user.name || "empty" }}</a>
+    <span editable-text="user.name" e-form="textBtnForm">{{ user.name || "empty" }}</span>
+    <button class="btn btn-default" ng-click="textBtnForm.$show()" ng-hide="textBtnForm.$visible">Edit</button>
   </div>
 </body>
 </html>
